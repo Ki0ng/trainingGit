@@ -137,6 +137,18 @@ style: |
     max-height: 350px;
     object-fit: contain;
   }
+  .center-page-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+  }
+  .center-page-image img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
   table {
     font-size: 0.9rem;
     width: 100%;
@@ -498,7 +510,7 @@ git merge feature/login</code></pre>
     <p><b>5. Review & Merge:</b> Leader xem Diff, Comment, Approve &rarr; Bấm <b>Merge Pull Request</b>.</p>
   </div>
   <div>
-    <img src="./images/buoi3-github-pull-request.png" width="100%" alt="Giao diện Pull Request trên GitHub" />
+    <img src="./images/buoi3-github-remote-push-pull.png" width="100%" alt="Giao diện Pull Request trên GitHub" />
   </div>
 </div>
 
@@ -569,6 +581,7 @@ git merge feature/login</code></pre>
   </div>
   <div>
     <img src="./images/buoi4-git-extensions.png" width="100%" alt="Extensions GitLens và Git Graph" />
+    <img src="./images/buoi4-git-extensionss.png" width="100%" alt="Extensions GitLens và Git Graph" />
   </div>
 </div>
 
@@ -620,7 +633,26 @@ git merge feature/login</code></pre>
 
 ---
 
-<!-- Slide 21: Buổi 5 - Tự Động Hóa Jira + GitHub -->
+<!-- Slide 21: Buổi 5 - Hướng Dẫn Kết Nối Jira Với GitHub (CÀI ĐẶT INTEGRATION) -->
+# <img src="./images/logo.png" class="title-logo" /> Buổi 5: Hướng Dẫn Tích Hợp Jira Với GitHub
+## Các bước thiết lập liên kết hai nền tảng
+
+<div class="grid-2">
+  <div>
+    <h3>4 Bước Kết Nối Hệ Thống:</h3>
+    <p><b>Bước 1:</b> Vào Jira &rarr; Chọn <b>Apps</b> &rarr; Tìm app <b>GitHub for Jira</b> và bấm <i>Get it now</i>.</p>
+    <p><b>Bước 2:</b> Đăng nhập tài khoản GitHub &rarr; Ủy quyền cấp phép (Authorize Atlassian).</p>
+    <p><b>Bước 3:</b> Chọn Organization / Repository trên GitHub muốn kết nối với Jira Project.</p>
+    <p><b>Bước 4:</b> Kiểm tra mục <b>Development</b> hiển thị trong giao diện chi tiết Task của Jira.</p>
+  </div>
+  <div>
+    <img src="./images/buoi5-jira-github-integration-setup.png" width="100%" alt="Cài đặt kết nối Jira với GitHub" />
+  </div>
+</div>
+
+---
+
+<!-- Slide 22: Buổi 5 - Tự Động Hóa Jira + GitHub -->
 # <img src="./images/logo.png" class="title-logo" /> Buổi 5: Quy Trình Tự Động Hóa Jira + GitHub
 ## Chỉ cần gắn Mã Task ID, Jira sẽ tự động cập nhật!
 
@@ -655,21 +687,25 @@ git merge feature/login</code></pre>
   </table>
 </div>
 
+---
+# <img src="./images/logo.png" class="title-logo" /> Buổi 5: Quy Trình Tự Động Hóa Jira + GitHub
+## Chỉ cần gắn Mã Task ID, Jira sẽ tự động cập nhật!
+
 <div class="grid-2">
   <div>
     <img src="./images/buoi5-jira-github-link.png" width="100%" alt="Liên kết mã Task ID" />
   </div>
   <div>
-    <img src="./images/buoi5-jira-auto-done.png" width="100%" alt="Tự động Done Task trên Jira" />
+    <img src="./images/buoi5-jira-auto-done.png" width="70%" alt="Tự động Done Task trên Jira" />
   </div>
-</div>
+</div>  
 
 ---
 
-<!-- Slide 22: Tổng Kết Khóa Đào Tạo -->
+<!-- Slide 23: Tổng Kết Khóa Đào Tạo -->
 # <img src="./images/logo.png" class="title-logo" /> TỔNG KẾT KHÓA ĐÀO TẠO
 ## Đây là phần câu hỏi
 
-<div>
-  <img src="./images/git-summary-outro.png" width="100%" alt="Q & A" />
+<div class="center-page-image">
+  <img src="./images/git-summary-outro.png" width="50%" alt="Q & A" />
 </div>

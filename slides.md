@@ -4,12 +4,11 @@ theme: default
 paginate: true
 style: |
   section {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: flex-start !important;
-    align-items: flex-start !important;
-    place-content: flex-start flex-start !important;
-    text-align: left !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
     background-color: #ffffff;
     color: #1e293b;
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -31,10 +30,13 @@ style: |
     width: 100%;
   }
   .title-logo {
-    height: 48px;
-    width: 48px;
+    height: 48px !important;
+    width: 48px !important;
+    min-width: 48px;
+    min-height: 48px;
     object-fit: contain;
     flex-shrink: 0;
+    display: inline-block !important;
   }
   h2 {
     color: #d97706;
@@ -134,8 +136,10 @@ style: |
   }
   img {
     border-radius: 6px;
+    max-width: 100%;
     max-height: 350px;
     object-fit: contain;
+    display: block;
   }
   .center-page-image {
     display: flex;
@@ -166,11 +170,12 @@ style: |
 ---
 
 <!-- Slide 1: Cover Slide - Introduction Git & GitHub -->
+<!-- Slide 1: Cover Slide - Introduction Git & GitHub -->
 # <img src="./images/logo.png" class="title-logo" /> INTRODUCTION TO GIT & GITHUB
 ## Git, GitHub
 
-<div class="box" style="text-align: center; padding: 10px;">
-    <img src="./images/imageGit.png" width="100%" style="max-height: 220px; object-fit: contain;" alt="Git Installation" />
+<div class="center-page-image">
+  <img src="./images/imageGit.png" style="max-width: 80%; height: auto;" alt="Git Installation" />
 </div>
 
 ---
@@ -221,7 +226,7 @@ style: |
     </div>
   </div>
   <div>
-    <img src="./images/gitAdSourceTree.jpg" width="100%" alt="Buổi 1 Overview" />
+    <img src="./images/gitAdSourceTree.jpg" style="width: 100%;" alt="Buổi 1 Overview" />
   </div>
 </div>
 
@@ -244,7 +249,7 @@ style: |
     </div>
   </div>
   <div>
-    <img src="./images/gitOverview.jpg" width="100%" alt="Khái niệm Git trực quan" />
+    <img src="./images/gitOverview.jpg" style="width: 100%;" alt="Khái niệm Git trực quan" />
   </div>
 </div>
 
@@ -271,7 +276,7 @@ style: |
 
 <div class="grid-2" style="margin-top: 10px;">
   <div>
-    <img src="./images/imageCompare.png" width="100%" alt="So sánh công cụ Git" />
+    <img src="./images/imageCompare.png" style="width: 100%;" alt="So sánh công cụ Git" />
   </div>
   <div>
     <div class="practice-box">
@@ -296,7 +301,7 @@ style: |
     <pre><code>git --version</code></pre>
   </div>
   <div>
-    <img src="./images/buoi1-install-git.png" width="100%" alt="Hướng dẫn cài đặt Git" />
+    <img src="./images/buoi1-install-git.png" style="width: 100%;" alt="Hướng dẫn cài đặt Git" />
   </div>
 </div>
 
@@ -348,7 +353,7 @@ git config --list</code></pre>
     </div>
   </div>
   <div>
-    <img src="./images/3-vung-du-lieu.png" width="100%" alt="3 vùng dữ liệu trong Git" />
+    <img src="./images/3-vung-du-lieu.png" style="width: 100%;" alt="3 vùng dữ liệu trong Git" />
   </div>
 </div>
 
@@ -367,7 +372,7 @@ git config --list</code></pre>
     <p><code>git log --oneline</code> : Xem lại lịch sử các commit.</p>
   </div>
   <div>
-    <img src="./images/buoi1-basic-commands.png" width="100%" alt="Sơ đồ câu lệnh Git căn bản" />
+    <img src="./images/buoi1-basic-commands.png" style="width: 100%;" alt="Sơ đồ câu lệnh Git căn bản" />
   </div>
 </div>
 
@@ -393,7 +398,7 @@ git config --list</code></pre>
     </div>
   </div>
   <div>
-    <img src="./images/buoi2-overview.png" width="100%" alt="Buổi 2 Overview" />
+    <img src="./images/buoi2-overview.png" style="width: 100%;" alt="Buổi 2 Overview" />
   </div>
 </div>
 
@@ -412,7 +417,7 @@ git config --list</code></pre>
     <p>• Tạo & chuyển nhanh: <code>git checkout -b feature/login</code></p>
   </div>
   <div>
-    <img src="./images/buoi2-git-branch-merge.png" width="100%" alt="Sơ đồ chia nhánh trong Git" />
+    <img src="./images/buoi2-git-branch-merge.png" style="width: 100%;" alt="Sơ đồ chia nhánh trong Git" />
   </div>
 </div>
 
@@ -439,7 +444,7 @@ git merge feature/login</code></pre>
     <p><b>B4:</b> Chốt commit: <code>git commit -m "Fix conflict"</code></p>
   </div>
   <div>
-    <img src="./images/buoi2-conflict-resolution.png" width="100%" alt="Giao diện Fix Conflict trên VS Code" />
+    <img src="./images/buoi2-conflict-resolution.png" style="width: 100%;" alt="Giao diện Fix Conflict trên VS Code" />
   </div>
 </div>
 
@@ -465,7 +470,7 @@ git merge feature/login</code></pre>
     </div>
   </div>
   <div>
-    <img src="./images/buoi3-overview.png" width="100%" alt="Buổi 3 Overview" />
+    <img src="./images/buoi3-overview.png" style="width: 100%;" alt="Buổi 3 Overview" />
   </div>
 </div>
 
@@ -485,7 +490,7 @@ git merge feature/login</code></pre>
     <p>• <code>git pull origin <branch></code> : Tải code mới nhất từ GitHub về máy.</p>
   </div>
   <div>
-    <img src="./images/buoi3-github-remote-push-pull.png" width="100%" alt="Thao tác Push Pull Clone" />
+    <img src="./images/buoi3-github-remote-push-pull.png" style="width: 100%;" alt="Thao tác Push Pull Clone" />
   </div>
 </div>
 
@@ -510,7 +515,7 @@ git merge feature/login</code></pre>
     <p><b>5. Review & Merge:</b> Leader xem Diff, Comment, Approve &rarr; Bấm <b>Merge Pull Request</b>.</p>
   </div>
   <div>
-    <img src="./images/buoi3-github-remote-push-pull.png" width="100%" alt="Giao diện Pull Request trên GitHub" />
+    <img src="./images/buoi3-github-remote-push-pull.png" style="width: 100%;" alt="Giao diện Pull Request trên GitHub" />
   </div>
 </div>
 
@@ -536,7 +541,7 @@ git merge feature/login</code></pre>
     </div>
   </div>
   <div>
-    <img src="./images/buoi4-overview.png" width="100%" alt="Buổi 4 Overview" />
+    <img src="./images/buoi4-overview.png" style="width: 100%;" alt="Buổi 4 Overview" />
   </div>
 </div>
 
@@ -557,7 +562,7 @@ git merge feature/login</code></pre>
     </ul>
   </div>
   <div>
-    <img src="./images/buoi4-git-flow-diagram.png" width="100%" alt="Sơ đồ mô hình Git Flow" />
+    <img src="./images/buoi4-git-flow-diagram.png" style="width: 100%;" alt="Sơ đồ mô hình Git Flow" />
   </div>
 </div>
 
@@ -580,8 +585,8 @@ git merge feature/login</code></pre>
     <p>Vẽ sơ đồ cây các nhánh, các điểm Commit & Merge bằng giao diện hình ảnh đẹp mắt, dễ thao tác.</p>
   </div>
   <div>
-    <img src="./images/buoi4-git-extensions.png" width="100%" alt="Extensions GitLens và Git Graph" />
-    <img src="./images/buoi4-git-extensionss.png" width="100%" alt="Extensions GitLens và Git Graph" />
+    <img src="./images/buoi4-git-extensions.png" style="width: 100%;" alt="Extensions GitLens và Git Graph" />
+    <img src="./images/buoi4-git-extensionss.png" style="width: 100%; margin-top: 10px;" alt="Extensions GitLens và Git Graph" />
   </div>
 </div>
 
@@ -602,7 +607,7 @@ git merge feature/login</code></pre>
     </div>
   </div>
   <div>
-    <img src="./images/buoi5-overview.png" width="100%" alt="Buổi 5 Overview" />
+    <img src="./images/buoi5-overview.png" style="width: 100%;" alt="Buổi 5 Overview" />
   </div>
 </div>
 
@@ -622,7 +627,7 @@ git merge feature/login</code></pre>
     <p>• <b>Bug:</b> Lỗi phát sinh cần sửa.</p>
   </div>
   <div>
-    <img src="./images/buoi5-jira-kanban-board.png" width="100%" alt="Jira Kanban Board" />
+    <img src="./images/buoi5-jira-kanban-board.png" style="width: 100%;" alt="Jira Kanban Board" />
   </div>
 </div>
 
@@ -646,7 +651,7 @@ git merge feature/login</code></pre>
     <p><b>Bước 4:</b> Kiểm tra mục <b>Development</b> hiển thị trong giao diện chi tiết Task của Jira.</p>
   </div>
   <div>
-    <img src="./images/buoi5-jira-github-integration-setup.png" width="100%" alt="Cài đặt kết nối Jira với GitHub" />
+    <img src="./images/buoi5-jira-github-integration-setup.png" style="width: 100%;" alt="Cài đặt kết nối Jira với GitHub" />
   </div>
 </div>
 
@@ -688,15 +693,16 @@ git merge feature/login</code></pre>
 </div>
 
 ---
+
 # <img src="./images/logo.png" class="title-logo" /> Buổi 5: Quy Trình Tự Động Hóa Jira + GitHub
 ## Chỉ cần gắn Mã Task ID, Jira sẽ tự động cập nhật!
 
 <div class="grid-2">
   <div>
-    <img src="./images/buoi5-jira-github-link.png" width="100%" alt="Liên kết mã Task ID" />
+    <img src="./images/buoi5-jira-github-link.png" style="width: 100%;" alt="Liên kết mã Task ID" />
   </div>
   <div>
-    <img src="./images/buoi5-jira-auto-done.png" width="70%" alt="Tự động Done Task trên Jira" />
+    <img src="./images/buoi5-jira-auto-done.png" style="width: 70%;" alt="Tự động Done Task trên Jira" />
   </div>
 </div>  
 
@@ -707,5 +713,5 @@ git merge feature/login</code></pre>
 ## Đây là phần câu hỏi
 
 <div class="center-page-image">
-  <img src="./images/git-summary-outro.png" width="50%" alt="Q & A" />
+  <img src="./images/git-summary-outro.png" style="max-width: 50%; height: auto;" alt="Q & A" />
 </div>
